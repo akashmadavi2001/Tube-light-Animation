@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    outline: none;
+    font-size: 5.8rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 4.1rem;
+    -webkit-box-reflect: below 0px linear-gradient(#00000000, #00000010, #00000036, #00000058);
+    animation: light 4s linear infinite alternate;
+}
+
+@keyframes light {
+
+    0%,
+    5%,
+    10%,
+    20%,
+    23%,
+    45%,
+    59%,
+    70%,
+    90%,
+    93% {
+        color: #ffffff34;
+        text-shadow: none;
+    }
+
+    5%,
+    8%,
+    15%,
+    25%,
+    44%,
+    60%,
+    71%,
+    85%,
+    100% {
+        color: #fff;
+        text-shadow:
+            0 0 10px #00bbff,
+            0 0 20px #00bbff,
+            0 0 40px #00bbff,
+            0 0 80px #00bbff,
+            0 0 160px #00bbff;
+    }
+
+}
